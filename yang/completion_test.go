@@ -73,9 +73,11 @@ func TestCompletionOptionHelp(t *testing.T) {
 		schemaTemplate,
 		`opd:option test-option {
 			opd:help "Option help";
+			type string;
 		}
 		opd:option another-option {
 			opd:help "Another option help";
+			type string;
 		}`))
 
 	expects := map[string]string{
