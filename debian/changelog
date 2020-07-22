@@ -1,3 +1,10 @@
+golang-github-danos-op (1.2.3) unstable; urgency=medium
+
+  [ Paul Carson ]
+  * Type statement is mandatory on opd:option (Fixes: VRVDR-50231)
+
+ -- William Ivory <william.ivory@intl.att.com>  Wed, 22 Jul 2020 11:38:15 +0100
+
 golang-github-danos-op (1.2.2) unstable; urgency=medium
 
   * DANOS Import
