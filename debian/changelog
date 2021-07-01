@@ -1,3 +1,12 @@
+golang-github-danos-op (1.2.4) unstable; urgency=medium
+
+  [ Nicholas Brown ]
+  * dh-systemd is part of debhelper
+  * Use 'go vet' instead of 'go tool vet'
+  * Update to debian compat level 10
+
+ -- Paul Carson <paul.carson@intl.att.com>  Thu, 01 Jul 2021 13:58:02 +0100
+
 golang-github-danos-op (1.2.3) unstable; urgency=medium
 
   [ Paul Carson ]
