@@ -21,6 +21,7 @@ override_dh_auto_build: vet
 	dh_auto_build -- $(GORACE)
 
 vet:
+	go env -w GO111MODULE=off
 	if go doc cmd/vet >/dev/null 2>&1; then \
 		GOPATH=$(CURDIR)/$(GOBUILDDIR) go vet $$(find . -type f -name \*.go | \
 	    xargs dirname | sort -u | grep -v "/vendor/"); \
