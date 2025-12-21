@@ -348,7 +348,7 @@ func (y *Yang) getPathError(ps []string, unexpected string) error {
 	if err := y.validatePath(ps); err != nil {
 		return err
 	}
-	return fmt.Errorf(unexpected)
+	return fmt.Errorf("%s", unexpected)
 }
 
 func (y *Yang) opdSchemaPathDescendant(ps []string) (*schema.TmplCompat, error) {
@@ -573,7 +573,7 @@ func (y *Yang) TmplValidateValues(path []string) (bool, error) {
 
 func formatError(err error) error {
 	if me, ok := err.(mgmterror.Formattable); ok {
-		return fmt.Errorf(me.GetMessage())
+		return fmt.Errorf("%s", me.GetMessage())
 	}
 	return err
 }
